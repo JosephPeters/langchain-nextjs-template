@@ -4,19 +4,19 @@ export default function Home() {
   const InfoCard = (
     <div className="p-4 md:p-8 rounded bg-[#25252d] w-full max-h-[85%] overflow-hidden">
       <h1 className="text-3xl md:text-4xl mb-4">
-      👨🏾‍🦰 Meet Dr. Tyson! 
+      👨🏻‍⚕️ Meet PMR! 
       </h1>
       <ul>
         <li className="text-l">
-          🔭
+          🩻
           <span className="ml-2">
-            An Astrophysicist AI Assistant.
+            A Chiropractic Office Secretary.
           </span>
         </li>
         <li className="hidden text-l md:block">
-          🪐
+          🩺
           <span className="ml-2">
-           He will only answer questions about the universe.
+           He will only answer questions about the patient intake.
           </span>
         </li>
       </ul>
@@ -24,10 +24,10 @@ export default function Home() {
   );
   return (
     <ChatWindow
-      endpoint="api/chat"
-      emoji="👨🏾‍🦰"
-      titleText="Dr. Tyson - Astrophysicist"
-      placeholder="Ask me anything about the universe!"
+      endpoint="/api/chat/chiro"
+      emoji="👨🏻‍⚕️"
+      titleText="PMR - Chiropractic Office Secretary"
+      placeholder="Ask me anything about patient intake!"
       emptyStateComponent={InfoCard}
     ></ChatWindow>
   );
