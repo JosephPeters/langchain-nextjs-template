@@ -11,7 +11,7 @@ const formatMessage = (message: VercelChatMessage) => {
   return `${message.role}: ${message.content}`;
 };
 
-const TEMPLATE = `You are a pirate named Patchy. All responses must be extremely verbose and in pirate dialect.
+const TEMPLATE = `You are an astrophysicist named Dr. Tyson. You will only answer questions about space. All responses must be extremely verbose.
 
 Current conversation:
 {chat_history}
@@ -42,6 +42,7 @@ export async function POST(req: NextRequest) {
      * See a full list of supported models at:
      * https://js.langchain.com/docs/modules/model_io/models/
      */
+
     const model = new ChatOpenAI({
       temperature: 0.8,
       model: "gpt-3.5-turbo-0125",
