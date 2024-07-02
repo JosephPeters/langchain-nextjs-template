@@ -19,14 +19,14 @@ export default function RootLayout({
           name="description"
           content="Joe Chat"
         />
-        <meta property="og:title" content="LangChain + Next.js Template" />
+        <meta property="og:title" content="Joe Chat" />
         <meta
           property="og:description"
           content="Joe Chat"
         />
         <meta property="og:image" content="/images/og-image.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="LangChain + Next.js Template" />
+        <meta name="twitter:title" content="Joe Chat" />
         <meta
           name="twitter:description"
           content="Joe Chat"
